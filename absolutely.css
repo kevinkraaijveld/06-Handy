@@ -1,0 +1,234 @@
+/*  Kevin Kraaijveld CSS Handy
+============================================================================
+1. Algemene CSS
+2. Header
+3. CONTENT BLOCKS
+4. Overige CSS
+============================================================================ */
+
+
+/* 1. Algemene CSS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+body{
+	text-align : center;
+	font-family : Tahoma;
+	font-size : 14px;
+	background-color : black;
+	margin: 0px;
+
+}
+
+P{
+	margin: 0px;
+}
+
+h1{}
+h2{}
+h3{}
+
+	a{
+	    font-family: 'Roboto', sans-serif;
+	    color: #969696;
+	    text-decoration: none;
+	}
+	a:hover{
+	    color: #fff;;
+	}
+
+
+	/* 2. HEADER
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*    Nav
+---------------------------------------------------------------------------- */
+nav#menu{
+	position: fixed;
+	top:0px;
+	width: -webkit-fill-available;
+	z-index: 999;
+}
+nav#menu ul{
+    margin:0px;
+	  height: 27px;
+	  background: -webkit-linear-gradient(top, rgb(0, 0, 0), rgb(90, 90, 90)); /* For Safari 5.1 to 6.0 */
+	  background: -o-linear-gradient(bottom, rgb(0, 0, 0), rgb(90, 90, 90)); /* For Opera 11.1 to 12.0 */
+	  background: -moz-linear-gradient(bottom, rgb(0, 0, 0), rgb(90, 90, 90)); /* For Firefox 3.6 to 15 */
+	  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(90, 90, 90)); /* Standard syntax (must be last) */
+	  list-style-type: none;
+	  padding-right: 40px;
+		/*position: fixed;*/
+}
+nav#menu ul:hover{
+	background: -webkit-linear-gradient(top, rgb(80, 80, 80), rgb(255, 255, 255)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, rgb(80, 80, 80), rgb(255, 255, 255)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, rgb(80, 80, 80), rgb(255, 255, 255)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, rgb(80, 80, 80), rgb(255, 255, 255)); /* Standard syntax (must be last) */
+}
+li{
+    display:inline-block;
+    padding: 4px 25px;
+}
+nav#menu ul li a{
+	transition: 0.3s ease;
+	color: #5e5e58;
+}
+nav#menu ul li a:hover{
+	color: #000;
+}
+
+/* 3. CONTENT BLOCKS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*    Main
+---------------------------------------------------------------------------- */
+main{
+	position : relative;
+	text-align : left;
+	width : 700px;
+	margin : 100px auto;
+	min-height : 600px;
+	background-image : url(images/bg.jpg);
+	border : 4px solid red;
+	margin-top: 125px;
+}
+
+article{
+  background-color: rgba(187, 187, 187, 0.6);
+	padding: 10px 20px 20px;;
+	margin-top: 55%
+}
+
+span#toolbox{
+	height: fit-content;
+}
+span#toolbox:hover nav#box{
+	opacity: 1;
+	transition: 0.3s ease;
+}
+nav#box{
+	opacity:0;
+	bottom: 35px;
+	position: relative;
+}
+ul.tool-menu {
+    display: inline-grid;
+    background-color: #fff;
+		padding-left: 0px;
+}
+
+ul.tool-menu li{
+	padding:0px;
+	border: 1px solid #000;
+}
+
+ul.tool-menu li a{
+    color:#333;
+    background-color: #fff;
+		height: 25px;
+		width: 100px;
+		line-height: 25px;
+		text-decoration: none;
+		padding: 0 14px;
+		display: inline-block;
+		transition: 0.3s ease;
+}
+
+ul.tool-menu li:hover a{
+			background-color: #ffffaa;
+			color:#000;
+}
+
+
+/*Images
+---------------------------------------------------------------------------- */
+a#title{
+	display: inline-block;
+	position: absolute;
+  left: 30px;
+  top: -58px;
+	transition: 0.3s ease;
+}
+a#title:hover{
+	left: 30px;
+  top: -38px;
+}
+a#hammer{
+	display: inline-block;
+	position:absolute;
+	right: 60px;
+	top: -85px;
+	transition: 0.3s ease;
+}
+a#hammer:hover{
+	right: 60px;
+	top: -65px;
+}
+a#saw{
+	display: inline-block;
+	position:absolute;
+	left: -101px;
+	top: 60px;
+	transition: 0.3s ease;
+}
+a#saw:hover{
+	left: -81px;
+	top: 60px;
+}
+a#pincers{
+	display: inline-block;
+	position:absolute;
+	right: -90px;
+	top: 235px;
+	transition: 0.3s ease;
+}
+a#pincers:hover{
+	right: -70px;
+	top: 235px;
+}
+a#screwdriver{
+	display: inline-block;
+	position:absolute;
+	right: -90px;
+	top: 125px;
+	transition: 0.3s ease;
+}
+a#screwdriver:hover{
+	right: -70px;
+	top: 125px;
+}
+span#toolbox{
+	display: inline-block;
+	position:absolute;
+	left: 215px;
+  top: 145px;
+}
+/*     Footer
+---------------------------------------------------------------------------- */
+footer{
+	color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* 4. Overige CSS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+span#humanfactor{
+	color:#053bff;
+}
+span#humanfactor:hover span#humanblock{
+	display: block;
+}
+span#humanblock{
+	display:none;
+	position:absolute;
+  width:20%;
+  right: 16%;
+	color:#000;
+	padding:3px;
+	background-color:#fff;
+	border: 1px solid #053bff;
+	border-radius: 10px;
+}
+
+
+/*Made by Kevin Kraaijveld*/
