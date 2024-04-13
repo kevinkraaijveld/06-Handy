@@ -45,3 +45,6 @@ De handy webpagina moet aan de volgende technische eisen voldoen:
 ### Bronnen
 * [positioning elements](http://www.w3schools.com/cssref/pr_class_position.asp)
 * [displaying elements](http://www.w3schools.com/cssref/pr_class_display.asp)
+
+### Bekijk opdracht
+(Handy)[https://www.kevii.nl/opdrachten/05-handy/absolutely.html]
